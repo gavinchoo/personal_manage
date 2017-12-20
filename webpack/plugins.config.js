@@ -12,7 +12,7 @@ var htmlPlugins = []
 for (var key in entryConfig.web){
     htmlPlugins.push(new HtmlWebpackPlugin({
         template: './webpack/template/index.ejs',
-        filename: `${key.replace('/', '/assets/')}.html`,
+        filename: `${key.replace('/', '/assets/')}.ejs`,
         chunks: ['vendor', key],
         bundleName: bundleConfig.vendor.js,
     }))
@@ -21,7 +21,7 @@ for (var key in entryConfig.web){
 for (var key in entryConfig.mobile){
     htmlPlugins.push(new HtmlWebpackPlugin({
         template: './webpack/template/mobile.ejs',
-        filename: `${key.replace('/', '/assets/')}.html`,
+        filename: `${key.replace('/', '/assets/')}.ejs`,
         chunks: ['vendor', key],
         bundleName: bundleConfig.vendor.js,
     }))
