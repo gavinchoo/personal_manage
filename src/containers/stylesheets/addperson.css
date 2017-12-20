@@ -1,0 +1,70 @@
+/**
+ * @desc 后台样式
+ * @author Jafeney <692270687@qq.com>
+ * @dateTime 2016-12-23
+ **/
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 85%;
+}
+.row-container {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 85%;
+}
+.base-info {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  border: 1px solid gray;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+}
+.gutter-box {
+  padding: 5px 0;
+}
+.gutter-box Input {
+  width: 60%;
+}
+.datetime {
+  width: 60%;
+}
+.select_width {
+  width: 160px;
+}
+.text_lable {
+  margin-top: 10px;
+  font-size: 16px;
+}
+.action_btn_parent {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  display: block;
+  padding: 10px;
+  width: 470px;
+}
+.submitbtn {
+  position: relative;
+  font-size: larger;
+  width: 150px;
+  height: 40px;
+}
+.adduser-container {
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen {
+  .adduser-container {
+    width: 28%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .adduser-container {
+    width: 80%;
+  }
+}
