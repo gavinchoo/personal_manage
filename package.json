@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
+    "start-pro": "pm2 start ./bin/www",
     "build": "webpack --progress --config ./webpack/build/webpack.config.js",
     "build-dev": "webpack --progress --watch --config ./webpack/build/webpack.dev.config.js",
     "build-dev-server": "webpack-dev-server --progress --config ./webpack/build/webpack.dev.server.config.js",
