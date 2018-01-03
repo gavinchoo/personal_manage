@@ -9,8 +9,8 @@ var session = require('express-session')
 var compression = require('compression')
 // 索引页面，管理后台、用户页面
 var index = require('./server/routes/index');
-
 var api = require('./server/routes/api');
+
 var app = express();
 
 // view engine setup
@@ -61,7 +61,11 @@ app.use(function (err, req, res, next) {
 
     // render the error page
     res.status(err.status || 500);
-    res.render('error');
+    if (err.status == 404){
+        res.render('common/view/404')
+    }else {
+        res.render('common/view/error');
+    }
 });
 
 module.exports = app;

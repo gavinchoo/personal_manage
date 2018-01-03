@@ -27,6 +27,17 @@ for (var key in entryConfig.mobile){
     }))
 }
 
+htmlPlugins.push(new HtmlWebpackPlugin({
+    template: './webpack/template/404.ejs',
+    filename: 'common/view/404.ejs',
+    chunks: [],
+}))
+htmlPlugins.push(new HtmlWebpackPlugin({
+    template: './webpack/template/error.ejs',
+    filename: 'common/view/error.ejs',
+    chunks: [],
+}))
+
 module.exports = [
     new webpack.DllReferencePlugin({
         context: __dirname,
